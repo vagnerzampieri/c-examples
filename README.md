@@ -1,7 +1,9 @@
 # run C
 
+```
 gcc file -o main
 ./main
+```
 
 # Links
 

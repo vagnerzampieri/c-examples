@@ -3,22 +3,22 @@
 typedef struct {
   char * name;
   int age;
-} person;
+} Person;
 
-void birthday(person * p) {
-  p->age++;
+void birthday(Person * person) {
+  person->age++;
 }
 
 int main() {
-  person john;
-  john.name = "John";
-  john.age = 27;
+  Person person;
+  person.name = "John";
+  person.age = 27;
 
-  printf("%s is %d years old.\n", john.name, john.age);
+  printf("%s is %d years old.\n", person.name, person.age);
 
-  birthday(&john);
+  birthday(&person);
 
-  printf("Happy birthday! %s is now %d years old.\n", john.name, john.age);
+  printf("Happy birthday! %s is now %d years old.\n", person.name, person.age);
 
   return 0;
 }

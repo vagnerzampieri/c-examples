@@ -5,7 +5,9 @@ typedef struct {
   int age;
 } person;
 
-void birthday(person * p);
+void birthday(person * p) {
+  p->age++;
+}
 
 int main() {
   person john;
@@ -21,6 +23,3 @@ int main() {
   return 0;
 }
 
-void birthday(person * p) {
-  p->age++;
-}

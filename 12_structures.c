@@ -3,13 +3,13 @@
 typedef struct {
   char * name;
   int age;
-} person;
+} Person;
 
 int main() {
-  person john;
+  Person person;
 
-  john.name = "John";
-  john.age = 27;
+  person.name = "John";
+  person.age = 27;
 
-  printf("%s is %d years old.", john.name, john.age);
+  printf("%s is %d years old.\n", person.name, person.age);
 }

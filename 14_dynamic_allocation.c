@@ -4,12 +4,12 @@
 typedef struct {
   int x;
   int y;
-} point;
+} Point;
 
 int main() {
-  point * mypoint = NULL;
+  Point * mypoint = NULL;
 
-  mypoint = (point *)malloc(sizeof(point));
+  mypoint = (Point *)malloc(sizeof(Point));
 
   mypoint->x = 10;
   mypoint->y = 5;

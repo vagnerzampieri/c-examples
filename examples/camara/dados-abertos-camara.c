@@ -24,7 +24,9 @@ int main(void) {
   curl_slist_append(headers, "Accept: application/json");
   curl_slist_append(headers, "Content-Type: application/json");
 
-  curl_easy_setopt(curl, CURLOPT_URL, "https://dadosabertos.camara.leg.br/api/v2/proposicoes?ano=2022&itens=10&pagina=1&keywords=bicicleta&keywords=transporte ativo&keywords=ciclovia&keywords=mobilidade ativa&keywords=mobilidade sustentável&keywords=transporte por bicicleta");
+  // curl_easy_setopt(curl, CURLOPT_URL, "https://dadosabertos.camara.leg.br/api/v2/proposicoes?ano=2022&itens=10&pagina=1&keywords=bicicleta&keywords=transporte ativo&keywords=ciclovia&keywords=mobilidade ativa&keywords=mobilidade sustentável&keywords=transporte por bicicleta");
+  // curl_easy_setopt(curl, CURLOPT_URL, "https://dadosabertos.camara.leg.br/api/v2/proposicoes?ano=2022&itens=10&pagina=1&keywords=bicicleta");
+  curl_easy_setopt(curl, CURLOPT_URL, "https://dadosabertos.camara.leg.br/api/v2/proposicoes?ano=2022&itens=10&pagina=1&keywords=bicicleta&keywords=transporte%20ativo&keywords=ciclovia&keywords=mobilidade%20ativa&keywords=mobilidade%20sustent%C3%A1vel&keywords=transporte%20por%20bicicleta");
   curl_easy_setopt(curl, CURLOPT_HTTPHEADER, headers);
 
   response = curl_easy_perform(curl);

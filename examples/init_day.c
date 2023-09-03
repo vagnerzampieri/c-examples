@@ -10,9 +10,7 @@ int main() {
   command commands[] = {
     { "Spotify", "spotify &" },
     { "Slack", "slack &" },
-    { "Brave", "brave-browser &" },
-    { "SaaS", "code ~/Projects/capim/capim-dash-backend &" },
-    { "BNPL", "code ~/Projects/capim/capim-backend &" },
+    { "Google", "google-chrome &" },
   };
 
   size_t size = sizeof(commands) / sizeof(command);
